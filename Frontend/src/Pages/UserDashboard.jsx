@@ -1,3 +1,7 @@
+
+import React from "react";
+import{useAuth} from 'react';
+
 const UserDashboardPage = ({ setPage }) => {
     const { user, isLister, handleLogout } = useAuth();
     
@@ -76,3 +80,4 @@ const UserDashboardPage = ({ setPage }) => {
         </div>
     );
 };
+export default UserDashboardPage;

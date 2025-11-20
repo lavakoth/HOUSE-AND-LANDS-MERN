@@ -1,3 +1,5 @@
+import React from "react";
+
 const HomePage = ({ setPage, navigateToDetails }) => {
     // These match the MockProperties structure but are simplified for the featured section
     const FeaturedProperties = [
@@ -71,3 +73,5 @@ const HomePage = ({ setPage, navigateToDetails }) => {
         </div>
     );
 };
+
+export default HomePage;

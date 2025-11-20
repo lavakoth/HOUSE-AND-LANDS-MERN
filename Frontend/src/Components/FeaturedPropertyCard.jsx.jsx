@@ -1,9 +1,10 @@
+import react from 'react';
 
 const FeaturedPropertyCard = ({ property, navigateToDetails }) => {
     // Format price
     const formattedPrice = new Intl.NumberFormat('en-US', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'KSH',
         minimumFractionDigits: 0,
     }).format(property.price) + (property.type === 'Rent' ? '/mo' : '');
 
@@ -36,3 +37,4 @@ const FeaturedPropertyCard = ({ property, navigateToDetails }) => {
         </div>
     );
 };
+export default FeaturedPropertyCar;

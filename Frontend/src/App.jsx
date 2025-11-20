@@ -2,6 +2,12 @@
 import React, { useState, useEffect, useCallback, createContext, useContext } from 'react';
 
 
+import HomePage from './Pages/HomePage';
+import AuthForm from './Pages/LoginPage';
+import PropertyCard from './Pages/PropertyCard';
+import PropertyDetailsPage from './Pages/PropertyDetailsPage';
+import ListingsPage from './Pages/SearchResultsPage';
+import UserDashboardPage from './Pages/UserDashboard';
 
 
 const AppContent = () => {
@@ -32,7 +38,7 @@ const AppContent = () => {
       case 'register':
         // Simulates the RegisterPage
         return <AuthForm type="register" setPage={setCurrentPage} />;
-      case 'dashboard':
+      case 'dashboard': 
         // Simulates the UserDashboard.jsx
         if (!isAuthenticated) return (
              <UnprotectedRouteFallback setPage={setCurrentPage} message="You must be logged in to view your dashboard." />

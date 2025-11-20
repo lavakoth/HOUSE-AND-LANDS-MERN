@@ -1,3 +1,5 @@
+import React from "react";
+
 const PropertyCard = ({ property, navigateToDetails }) => {
     const { title, listingType, propertyType, price, location, details, images } = property;
     
@@ -53,3 +55,5 @@ const PropertyCard = ({ property, navigateToDetails }) => {
     );
 };
 
+
+export default PropertyCard ;

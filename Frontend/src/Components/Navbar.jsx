@@ -1,3 +1,8 @@
+
+import React from 'react';
+import { useState,useAuth } from 'react';
+
+
 const Header = ({ currentPage, setPage }) => {
   const { user, isAuthenticated, isLister, handleLogout } = useAuth();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -126,3 +131,4 @@ const Header = ({ currentPage, setPage }) => {
     </header>
   );
 };
+export default Header;

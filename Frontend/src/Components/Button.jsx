@@ -1,3 +1,5 @@
+
+import react from 'react';
 const Button = ({ children, onClick, primary = true, icon: Icon, disabled = false, loading = false, className = '', type = 'button' }) => (
   <button
     type={type}
@@ -14,3 +16,4 @@ const Button = ({ children, onClick, primary = true, icon: Icon, disabled = fals
     <span>{children}</span>
   </button>
 );
+export default Button;

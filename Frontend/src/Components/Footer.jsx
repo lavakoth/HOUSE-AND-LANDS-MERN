@@ -1,5 +1,9 @@
-const Footer = () => (
-  <footer className="w-full bg-gray-900 text-white p-6 mt-12 shadow-inner">
+import React from "react";
+import React from 'react'
+
+const Footer = () => {
+  return (
+    <footer className="w-full bg-gray-900 text-white p-6 mt-12 shadow-inner">
     <div className="max-w-7xl mx-auto text-center">
       <p className="text-sm text-gray-400">
         &copy; {new Date().getFullYear()} RealtyPlatform. All rights reserved.
@@ -11,4 +15,8 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-);
+    
+  )
+}
+
+export default Footer;

@@ -1,3 +1,6 @@
+import react from 'react';
+import { useState,useAuth} from 'react';
+
 const AuthForm = ({ type, setPage }) => {
     const { handleAuth, loading, error, setError } = useAuth();
     const [formData, setFormData] = useState({
@@ -93,3 +96,4 @@ const AuthForm = ({ type, setPage }) => {
         </div>
     );
 };
+export default AuthForm;

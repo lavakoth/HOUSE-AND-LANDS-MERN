@@ -1,3 +1,6 @@
+import React from "react";
+import { useState,useEffect,useAuth } from "react";
+
 const PropertyDetailsPage = ({ propertyId, setPage }) => {
     const [property, setProperty] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -169,3 +172,5 @@ const DetailBox = ({ icon: Icon, label, value }) => (
         <p className="text-sm text-gray-500">{label}</p>
     </div>
 );
+
+export default PropertyDetailsPage;

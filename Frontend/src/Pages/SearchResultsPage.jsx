@@ -1,3 +1,6 @@
+import React from "react";
+import { useState,useEffect } from "react";
+
 const ListingsPage = ({ navigateToDetails }) => {
     const [properties, setProperties] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -103,3 +106,4 @@ const ListingsPage = ({ navigateToDetails }) => {
         </div>
     );
 };
+export default ListingsPage;
