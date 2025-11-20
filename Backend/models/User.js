@@ -1,0 +1,35 @@
+// server/models/User.js
+
+const mongoose = require('mongoose');
+
+const UserSchema = new mongoose.Schema({
+    username: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+        lowercase: true,
+    },
+    password: {
+        type: String,
+        required: true,
+    },
+    role: {
+        type: String,
+        enum: ['buyer', 'renter', 'agent', 'landlord', 'admin'],
+        default: 'buyer',
+        required: true,
+    },
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    phoneNumber: { type: String },
+    profilePicture: { type: String }, // URL to profile picture
+}, { timestamps: true });
+
+module.exports = mongoose.model('User', UserSchema);
