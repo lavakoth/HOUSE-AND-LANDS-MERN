@@ -1,22 +1,23 @@
-import React from "react";
-import React from 'react'
+// src/components/Footer.jsx
+import React from 'react';
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="w-full bg-gray-900 text-white p-6 mt-12 shadow-inner">
-    <div className="max-w-7xl mx-auto text-center">
-      <p className="text-sm text-gray-400">
-        &copy; {new Date().getFullYear()} RealtyPlatform. All rights reserved.
-      </p>
-      <div className="flex justify-center space-x-6 mt-2">
-        <a href="#" className="text-gray-400 hover:text-blue-400 text-sm">Privacy</a>
-        <a href="#" className="text-gray-400 hover:text-blue-400 text-sm">Terms</a>
-        <a href="#" className="text-gray-400 hover:text-blue-400 text-sm">Contact</a>
+    <footer className="bg-gray-900 text-white py-10 mt-20">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <p className="text-sm text-gray-400">
+          © {year} RealEstatePro. All rights reserved.
+        </p>
+        <div className="flex justify-center gap-6 mt-4 text-sm">
+          <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
+          <a href="#" className="text-gray-400 hover:text-white">Terms of Service</a>
+          <a href="#" className="text-gray-400 hover:text-white">Contact</a>
+        </div>
       </div>
-    </div>
-  </footer>
-    
-  )
-}
+    </footer>
+  );
+};
 
 export default Footer;
