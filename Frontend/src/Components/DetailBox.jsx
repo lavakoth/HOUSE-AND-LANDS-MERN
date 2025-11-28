@@ -1,5 +1,5 @@
 // src/components/DetailBox.jsx
-import React from 'react';
+import React from "react";
 
 const DetailBox = ({ icon: Icon, label, value }) => (
   <div className="text-center p-4 bg-gray-50 rounded-lg border">

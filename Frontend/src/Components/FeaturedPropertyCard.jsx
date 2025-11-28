@@ -1,7 +1,7 @@
 // src/components/FeaturedPropertyCard.jsx
 import React from 'react';
 import { Bed, Bath, MapPin } from 'lucide-react';
-import Button from './components/Button';
+import Button from './Button';
 
 const FeaturedPropertyCard = ({ property, navigateToDetails }) => {
   const { title, price, type, location, bedrooms, bathrooms, image } = property;

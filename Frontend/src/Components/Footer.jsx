@@ -1,5 +1,5 @@
 // src/components/Footer.jsx
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -11,9 +11,15 @@ const Footer = () => {
           © {year} RealEstatePro. All rights reserved.
         </p>
         <div className="flex justify-center gap-6 mt-4 text-sm">
-          <a href="#" className="text-gray-400 hover:text-white">Privacy Policy</a>
-          <a href="#" className="text-gray-400 hover:text-white">Terms of Service</a>
-          <a href="#" className="text-gray-400 hover:text-white">Contact</a>
+          <a href="#" className="text-gray-400 hover:text-white">
+            Privacy Policy
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white">
+            Terms of Service
+          </a>
+          <a href="#" className="text-gray-400 hover:text-white">
+            Contact
+          </a>
         </div>
       </div>
     </footer>
