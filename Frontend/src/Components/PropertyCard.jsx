@@ -22,7 +22,7 @@ const PropertyCard = ({ property, navigateToDetails }) => {
       <img
         src={
           images[0] ||
-          "./House.png"
+          "./House.png init"
         }
         alt={title}
         className="w-full h-48 object-cover"
